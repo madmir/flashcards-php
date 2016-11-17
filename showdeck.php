@@ -71,14 +71,14 @@ else if ($library->getDeck($_SESSION['deck'])->isEmpty())
                 if (isset($_GET['action']) && $_GET['action'] == 'answer')
                     echo '<span>' . $library->getDeck($_SESSION['deck'])->getCard()->getAnswer() . '</span>';
                 else
-                    echo '<span> <a href="showdeck.php?deck=' . $library->getDeck($_SESSION['deck'])->getName() . '&action=answer">Get Answer</a></span>';
+                    echo '<span> <a href="showdeck.php?deck=' . $library->getDeck($_SESSION['deck'])->getName() . '&action=answer">Get answer</a></span>';
                 ?>
             </div>
             <?php
             if (isset($_GET['action']) && $_GET['action'] == 'answer')
             {
                 echo '<div>';
-                echo '<a href="showdeck.php?deck=' . $library->getDeck($_SESSION['deck'])->getName() . '&action=next">Next Card</a>';
+                echo '<a href="showdeck.php?deck=' . $library->getDeck($_SESSION['deck'])->getName() . '&action=next">Next card</a>';
                 echo '</div>';
                 echo '<div>';
                 echo '<br>';
@@ -87,7 +87,7 @@ else if ($library->getDeck($_SESSION['deck'])->isEmpty())
                 echo '</div>';
             }
             echo '<br><br>';
-            echo '<a href="index.php">Home Page</a> ';
+            echo '<a href="index.php">Home page</a> ';
             echo '<a href="changedeck.php?deck=' . $library->getDeck($_SESSION['deck'])->getName() . '&action=add">Add new card</a>';
             ?>
         </div>

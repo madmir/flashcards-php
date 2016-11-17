@@ -61,7 +61,7 @@ else if (isset($_GET['action']) && $_GET['action'] == 'remove')
                 else if (isset($_GET['action']) && $_GET['action'] == 'add')
                     echo '<input type="submit" name="submit" value="Add">';
                 echo '<br><br>';
-                echo '<a href="index.php">Home Page</a> ';
+                echo '<a href="index.php">Home page</a> ';
                 ?>
             </div>
         </form>
