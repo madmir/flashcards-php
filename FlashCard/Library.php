@@ -12,6 +12,7 @@ class Library
 
     public function addDeck($name, $deck)
     {
+        $name = $name ? $name : "The name was not set.";
         $this->decks[$name] = $deck;
     }
 
